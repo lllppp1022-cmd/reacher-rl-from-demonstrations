@@ -1,0 +1,17 @@
+[
+  {
+    "file": "reacher_bc_anchor/configs/experiment.json",
+    "sha256": "2ff17360be505b9131b9b37f7f693cb86d594f36405859de53c34897acaec8b2",
+    "bytes": 3366
+  },
+  {
+    "file": "reacher_bc_anchor/tests/acceptance.json",
+    "sha256": "22d5a4e6e338ab1d9d8cfb380824a7ee9b423f61af6ec0bb1e6fab53c1d4f06b",
+    "bytes": 842
+  },
+  {
+    "file": "reacher_bc_anchor/reports/BC_Anchoring独立实验报告.md",
+    "sha256": "dd33868f89525421cd12744243a9af4ad2eaf32c0fd3b6fd485f506de2e0b3ae",
+    "bytes": 19194
+  }
+]

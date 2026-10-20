@@ -1,0 +1,8 @@
+{
+  "selected_betas": {
+    "weak": 200.0,
+    "medium": 2000.0,
+    "strong": 10000.0
+  },
+  "source": "historical calibration, training-only diagnostic observations"
+}

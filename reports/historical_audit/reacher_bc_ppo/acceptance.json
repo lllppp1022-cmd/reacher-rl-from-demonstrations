@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checked_unix": 1792055340.9873588,
+  "expert_samples": {
+    "expert_train": 250000,
+    "expert_validation": 25000
+  },
+  "original_bc_models": 3,
+  "active_bc_models": 3,
+  "finetuned_models": 3,
+  "online_steps_each": 100352,
+  "final_policies": 19,
+  "final_episodes": 1900,
+  "video_count": 4,
+  "plot_count": 9,
+  "actor_transfer_verified": true,
+  "privileged_bc_control_forbidden_test": true
+}

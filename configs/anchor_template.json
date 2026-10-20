@@ -1,0 +1,127 @@
+{
+  "output_root": "runtime",
+  "source_root": "runtime/source",
+  "implementation_reference": "src/verified/reacher_safe_finetune",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "diagnostic_seeds": [
+    14000,
+    14099
+  ],
+  "validation_seeds": [
+    15000,
+    15099
+  ],
+  "final_seeds": [
+    16000,
+    16099
+  ],
+  "display_seeds": [
+    7059,
+    7012
+  ],
+  "reference_observations": 1000,
+  "reference_sampling_seed": 141731,
+  "bc_reference_std": 0.005,
+  "short_steps": 20480,
+  "short_checkpoints": [
+    0,
+    1024,
+    5120,
+    10240,
+    15360,
+    20480
+  ],
+  "long_steps": 100352,
+  "long_checkpoints": [
+    0,
+    1024,
+    5120,
+    10240,
+    20480,
+    40960,
+    60416,
+    80896,
+    100352
+  ],
+  "ppo": {
+    "n_steps": 1024,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "max_grad_norm": 0.5,
+    "vf_coef": 0.5,
+    "ent_coef": 0.0
+  },
+  "groups": {
+    "b0": {
+      "label": "b0",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": 0,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    },
+    "weak": {
+      "label": "weak",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": null,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    },
+    "medium": {
+      "label": "medium",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": null,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    },
+    "strong": {
+      "label": "strong",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": null,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    }
+  },
+  "selection": {
+    "max_mean_success_drop_pp": 5.0,
+    "max_seed_success_drop_pp": 10.0,
+    "max_final_error_ratio": 1.25,
+    "max_update_kl": 10.0,
+    "max_nonzero_candidates": 2,
+    "near_tie_pp": 0.5,
+    "max_action_cost_ratio": 2.0,
+    "max_action_cost_absolute_slack": 0.01
+  },
+  "early_stop_outside": {
+    "last_steps": 50,
+    "distance_m": 0.01,
+    "speed_m_s": 0.01
+  },
+  "viewer_during_training": true,
+  "viewer_fps": 25,
+  "anchor_definition": "On online rollout observations only: mean over batch AND 2 coordinates of (raw Gaussian mu_PPO - raw mu_fixed_BC)^2. No hidden normalization or rescaling. Fixed teacher uses the same serialized training-only observation normalizer; no teacher gradients or optimizer membership. Executed actions clipped to [-1,1] for physics and separate diagnostics. Anchor loss has no direct gradient to log_std or Critic.",
+  "decay_definition": "Hold initial beta through 20480; linearly decay to 10% initial beta at100352. Fresh BC restarts; no shared checkpoint forks.",
+  "protocol": "NEW independent calibration. Audit grid 0,.01,.1,1,10,100,1000 using seed42 diagnostic-only pilot20480 plus 5x1024 audit rollouts (zero, controlled bias+.002, post1024,post5120,post20480). Use mean Actor parameters only. Additional finite candidates derived once from median nonzero post-training raw gradient ratio at reference levels .01,.1,.5, rounded to 1 significant digit; these are diagnostic references, not optimal targets. Compare actual Adam counterfactual displacement and control behavior before freezing three strengths. Four groups x3 fresh BC seeds short20480. Validation15000-15099 gates long, at most2 candidates plus fresh b0. Best LONG checkpoint is a COMMON saved step across3 seeds ranked mean stable success, error, actioncost,seedSD; final and validation-best both disclosed. Final16000-16099 once per unique declared model after hashes frozen. Stable last5 XY<.01; physics/rewards unchanged."
+}

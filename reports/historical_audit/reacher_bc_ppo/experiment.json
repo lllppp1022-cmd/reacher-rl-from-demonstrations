@@ -1,0 +1,41 @@
+{
+  "output_root": "reacher_bc_ppo",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "expert_train_seeds": [
+    5000,
+    5999
+  ],
+  "expert_validation_seeds": [
+    6000,
+    6099
+  ],
+  "selection_seeds": [
+    7000,
+    7099
+  ],
+  "final_seeds": [
+    8000,
+    8099
+  ],
+  "bc_epochs": 60,
+  "bc_patience": 12,
+  "bc_batch_size": 1024,
+  "bc_learning_rate": 0.001,
+  "finetune_steps": 100352,
+  "initial_exploration_std": 0.005,
+  "baseline_ppo_200k": "ppo_reacher_250_A_200k.zip",
+  "baseline_ppo_300k": "ppo_reacher_250_A_300k.zip",
+  "pure_ppo_100k_paths": {
+    "42": "ppo_reacher_250_A.zip",
+    "123": "reacher_reward_grid_results/models/w1_seed123/final.zip",
+    "2026": "reacher_reward_grid_results/models/w1_seed2026/final.zip"
+  },
+  "viewer": true,
+  "dagger_episodes": 100,
+  "dagger_if_best_stable_pct_below": 50,
+  "selection_rule": "Preserve every seed and every method. Select representative BC and BC+PPO by highest stable success on 7000-7099, then lowest final distance, then lowest training seed. Freeze config and all hashes before one final 8000-8099 evaluation of all declared methods. DAgger trigger uses 6000-6099 closed-loop validation, training data only 5000-5099; never use selection or final data for labels."
+}

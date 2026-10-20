@@ -1,0 +1,124 @@
+{
+  "output_root": "reacher_bc_anchor",
+  "source_root": "reacher_bc_ppo",
+  "implementation_reference": "reacher_safe_finetune",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "diagnostic_seeds": [
+    7300,
+    7399
+  ],
+  "validation_seeds": [
+    11000,
+    11099
+  ],
+  "final_seeds": [
+    12000,
+    12099
+  ],
+  "display_seeds": [
+    7059,
+    7012
+  ],
+  "reference_observations": 1000,
+  "reference_sampling_seed": 72631,
+  "bc_reference_std": 0.005,
+  "short_steps": 20480,
+  "short_checkpoints": [
+    0,
+    1024,
+    5120,
+    10240,
+    15360,
+    20480
+  ],
+  "long_steps": 100352,
+  "long_checkpoints": [
+    0,
+    1024,
+    5120,
+    20480,
+    40960,
+    60416,
+    80896,
+    100352
+  ],
+  "ppo": {
+    "n_steps": 1024,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "max_grad_norm": 0.5,
+    "vf_coef": 0.5,
+    "ent_coef": 0.0
+  },
+  "groups": {
+    "b0": {
+      "label": "beta=0 control",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": 0.0,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    },
+    "b001": {
+      "label": "beta=0.01",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": 0.01,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    },
+    "b01": {
+      "label": "beta=0.1",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": 0.1,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    },
+    "b1": {
+      "label": "beta=1.0",
+      "actor_lr": 1e-05,
+      "critic_lr": 0.0003,
+      "std": 0.005,
+      "warmup_steps": 0,
+      "target_kl": null,
+      "anchor_beta": 1.0,
+      "beta_schedule": "fixed",
+      "total_steps": 20480
+    }
+  },
+  "selection": {
+    "max_mean_success_drop_pp": 5.0,
+    "max_seed_success_drop_pp": 10.0,
+    "max_final_error_ratio": 1.25,
+    "max_update_kl": 10.0,
+    "max_nonzero_candidates": 1,
+    "near_tie_pp": 0.5
+  },
+  "early_stop_outside": {
+    "last_steps": 50,
+    "distance_m": 0.01,
+    "speed_m_s": 0.01
+  },
+  "viewer_during_training": true,
+  "viewer_fps": 25,
+  "anchor_definition": "On online rollout observations only: mean over batch AND 2 coordinates of (raw Gaussian mu_PPO - raw mu_fixed_BC)^2. No hidden normalization or rescaling. Fixed teacher uses the same serialized training-only observation normalizer; no teacher gradients or optimizer membership. Executed actions clipped to [-1,1] for physics and separate diagnostics. Anchor loss has no direct gradient to log_std or Critic.",
+  "decay_definition": "Long decay: beta0 * max(0,1-max(0,online_steps-1024)/(100352-1024)); first optimization beta0, final optimization0. Fixed and decaying jobs restart from BC with identical per-seed random streams; b0 long control freshly trained once.",
+  "protocol": "This is a new experiment, not a reuse of previous C results. Evaluate every new short checkpoint on7300-7399; choose eligible nonzero beta ONLY using11000-11099 zero/final scores across all3 training seeds. At most1 nonzero group chosen by mean stable success (within0.5pp use error then action cost then lower beta). Train chosen fixed+linear-decay and new beta0 control at100352 steps, 3 seeds each. If none eligible, all long jobs explicitly unexecuted. Freeze all model hashes and rule before one final12000-12099 evaluation of declared short/long models and BC/expert references. Stable success=ALL LAST FIVE steps XY distance<1cm. Rewards remain original3D distance/control1.0/1.0,250 steps,dt.02."
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "arguments": [
+      "-m",
+      "pip",
+      "install",
+      "--dry-run",
+      "--no-index",
+      "-r",
+      "requirements.txt"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 10.82211730023846,
+    "log": "tests/command_logs/00.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "init",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.2439244999550283,
+    "log": "tests/command_logs/01.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "watch",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.227913999930024,
+    "log": "tests/command_logs/02.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "evaluate",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.2314788000658154,
+    "log": "tests/command_logs/03.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "train",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.244900300167501,
+    "log": "tests/command_logs/04.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "replay",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.285375699866563,
+    "log": "tests/command_logs/05.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "pipeline",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.235339100006968,
+    "log": "tests/command_logs/06.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "results",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.2259124000556767,
+    "log": "tests/command_logs/07.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "record-video",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.295898400247097,
+    "log": "tests/command_logs/08.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "import-assets",
+      "--help"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.223970000166446,
+    "log": "tests/command_logs/09.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "init"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.5883211004547775,
+    "log": "tests/command_logs/10.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "results"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.3519577998667955,
+    "log": "tests/command_logs/11.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "import-assets",
+      "--archive-root",
+      ".."
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.6128891999833286,
+    "log": "tests/command_logs/12.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "evaluate",
+      "--method",
+      "long_decay_strong",
+      "--training-seed",
+      "42",
+      "--episodes",
+      "100"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.4724548999220133,
+    "log": "tests/command_logs/13.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "watch",
+      "--policy",
+      "bc",
+      "--max-steps",
+      "25",
+      "--fps",
+      "100"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 4.369269999675453,
+    "log": "tests/command_logs/14.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "watch",
+      "--policy",
+      "best",
+      "--max-steps",
+      "25",
+      "--fps",
+      "100"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 4.351584699936211,
+    "log": "tests/command_logs/15.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "watch",
+      "--policy",
+      "compare",
+      "--max-steps",
+      "25",
+      "--fps",
+      "100"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.274425399955362,
+    "log": "tests/command_logs/16.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "replay",
+      "--run",
+      "results/online_demo",
+      "--mode",
+      "actual",
+      "--episode",
+      "5",
+      "--update",
+      "1",
+      "--max-frames",
+      "250",
+      "--fps",
+      "200"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 7.532790299970657,
+    "log": "tests/command_logs/17.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "replay",
+      "--run",
+      "results/online_demo",
+      "--mode",
+      "compare",
+      "--episode",
+      "5",
+      "--update",
+      "1",
+      "--max-frames",
+      "30",
+      "--fps",
+      "200"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.80597859993577,
+    "log": "tests/command_logs/18.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "replay",
+      "--run",
+      "results/online_demo",
+      "--mode",
+      "progress",
+      "--episode",
+      "5",
+      "--update",
+      "1",
+      "--max-frames",
+      "30",
+      "--fps",
+      "200"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.996685399673879,
+    "log": "tests/command_logs/19.txt"
+  },
+  {
+    "arguments": [
+      "scripts/portfolio.py",
+      "pipeline",
+      "--profile",
+      "smoke",
+      "--output",
+      "results/pipeline_decay_smoke",
+      "--ppo-method",
+      "anchor",
+      "--schedule",
+      "linear"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 4.99023379990831,
+    "log": "tests/command_logs/20.txt"
+  }
+]

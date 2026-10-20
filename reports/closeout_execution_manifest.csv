@@ -1,0 +1,8 @@
+﻿run,purpose,actual_ppo_environment_steps,ppo_rollout_updates,model_sha256,expert_train_samples,expert_validation_samples,dagger_expert_labels,dagger_online_steps
+online_demo,"engineering verification, excluded from historical research statistics",4096,4,512cb02f69edbbb88525770463cf43de689d4d7aa5df47b7615da95fffbd0eb4,0,0,0,0
+human_smoke,"engineering verification, excluded from historical research statistics",1024,1,62c8a42b8b340a1c35044abf028f7bb5cfce69379d8be2968d54c10868512496,0,0,0,0
+human_update_window,"engineering verification, excluded from historical research statistics",2048,2,dd0ec19f3efe6608a155d3a0c9d1456482483937978e53b949fb023a97cf4ee1,0,0,0,0
+pipeline_smoke,"engineering verification, excluded from historical research statistics",1024,1,abaceaab127e3b55a1f63fbfb813dbd28e0c352a5ec9b31fcd72ca3b199a3b5c,500,250,250,250
+pipeline_scratch,"engineering verification, excluded from historical research statistics",1024,1,7d32b14f9bd578b4a7402d06e72ffd85f72a33aa893f69c316b1ffdfdd6e6f33,500,250,250,250
+pipeline_init,"engineering verification, excluded from historical research statistics",1024,1,8d5ca8d7a0b2b0dd9ae5a00b66417a4d9b099e6579345e41fc9b70aa349cb57d,500,250,250,250
+pipeline_decay_smoke,"engineering verification, excluded from historical research statistics",1024,1,6cc37ad8487c4510af35d59d886ed40a2edbaaf7b22f050d5cfc7010bd726655,500,250,250,250

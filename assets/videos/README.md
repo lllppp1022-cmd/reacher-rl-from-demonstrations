@@ -1,0 +1,1 @@
+Local GIF assets: 00_project_overview (70s), 01_same_start_comparison (10s), 02_actual_online_learning (20s), 03_bc_vs_final_policy (10s), 04_failure_cases (15s). Publication rights pending; Git intentionally excludes binary videos. See reports/video_validation.json.

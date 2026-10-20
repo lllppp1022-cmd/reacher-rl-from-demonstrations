@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checked_unix": 1792118480.2419875,
+  "short_groups": 5,
+  "short_runs": 15,
+  "short_steps_each": 20480,
+  "long_groups": [
+    "C"
+  ],
+  "long_runs": 3,
+  "long_steps_each": 100352,
+  "final_policies": 31,
+  "final_episodes": 3100,
+  "videos": 16,
+  "plots": 17,
+  "critic_freeze_exact": true,
+  "optimizer_groups_verified": true,
+  "initial_bc_action_equality": true,
+  "installed_sb3_update_parity": true,
+  "historical_hashes_unchanged": true,
+  "native_graphics_visible": true,
+  "automatic_checkpoint_switching": true,
+  "final_seed_isolation_verified": true,
+  "anchor_second_round_executed": false
+}

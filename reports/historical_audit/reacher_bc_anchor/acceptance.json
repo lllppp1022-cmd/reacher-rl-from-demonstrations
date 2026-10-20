@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checked_unix": 1792378027.3098612,
+  "new_project": "reacher_bc_anchor",
+  "short_betas": [
+    0,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "short_runs": 12,
+  "short_steps_each": 20480,
+  "selected_nonzero_groups": [
+    "b001"
+  ],
+  "long_runs": 9,
+  "long_steps_each": 100352,
+  "formal_online_steps": 1148928,
+  "beta0_previous_c_max_parameter_difference": 0.0,
+  "reference_frozen": true,
+  "gradient_paths_verified": true,
+  "post_training_serialization_verified": true,
+  "old_files_unchanged": true,
+  "final_models": 25,
+  "final_episodes": 2500,
+  "videos": 22,
+  "plots": 23,
+  "native_graphics_verified": true,
+  "automatic_snapshot_switching_verified": true,
+  "unexecuted_potential_long_runs": 12
+}

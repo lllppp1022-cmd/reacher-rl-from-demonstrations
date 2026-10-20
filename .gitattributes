@@ -1,0 +1,5 @@
+# Preserve verbatim third-party license text and existing verified-source formatting.
+third_party/** -text -whitespace
+src/verified/** -whitespace
+# This verbatim upstream RST license uses an equals-sign title underline.
+third_party/torch/licenses/third_party/fbgemm/fbgemm_gpu/docs/src/general/LICENSE.rst -diff

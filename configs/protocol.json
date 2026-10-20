@@ -1,0 +1,31 @@
+{
+  "environment": "Reacher-v5",
+  "episode_steps": 250,
+  "dt": 0.02,
+  "reward_distance_weight": 1,
+  "reward_control_weight": 1,
+  "observation_dim": 10,
+  "action_dim": 2,
+  "action_limits": [
+    -1,
+    1
+  ],
+  "stable_success": "all last 5 XY distances strictly < 0.01 m",
+  "train_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "validation_seeds": [
+    15000,
+    15099
+  ],
+  "final_seeds": [
+    16000,
+    16099
+  ],
+  "short_steps": 20480,
+  "long_steps": 100352,
+  "bc_actor_training_steps": "supervised; not an online PPO budget",
+  "final_statistics": "historical frozen evaluation recomputed; no new independent final set"
+}

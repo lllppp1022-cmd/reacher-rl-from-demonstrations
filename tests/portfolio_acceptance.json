@@ -1,0 +1,470 @@
+{
+  "status": "passed_with_explicit_skips",
+  "checks": [
+    {
+      "name": "major_imports",
+      "status": "passed",
+      "details": {
+        "imports": [
+          "anchor_ppo",
+          "evaluate_anchor",
+          "training_observation",
+          "training_rollout_analysis",
+          "record_training_rollouts",
+          "watch_training_rollout",
+          "watch_anchor_calibration",
+          "collect_expert_data",
+          "train_bc",
+          "evaluate_bc",
+          "finetune_bc_ppo",
+          "record_reacher_video"
+        ],
+        "models": [
+          {
+            "method": "BC-DAgger",
+            "seed": 42,
+            "sha256": "ead245dc9c2f0f84473a0957da619fba5bc723a44d319c976d9d9fb8970755b0",
+            "loaded": true
+          },
+          {
+            "method": "BC-DAgger",
+            "seed": 123,
+            "sha256": "110ea1d512ceedbc367741dd00cbc2096b5d02602baf598bfa772b2db9105352",
+            "loaded": true
+          },
+          {
+            "method": "BC-DAgger",
+            "seed": 2026,
+            "sha256": "0afa0500bdea8306000c9fca9034d43faabeadec0240c065d1163f2f58574fd5",
+            "loaded": true
+          },
+          {
+            "method": "long_control_b0",
+            "seed": 42,
+            "sha256": "e54c9c0df86517371986525011e3be5d8db93448802f1836b9745788972ef3f1",
+            "loaded": true
+          },
+          {
+            "method": "long_control_b0",
+            "seed": 123,
+            "sha256": "5404d3c15effeb27d28ac262f701d5b116f898d84cfc1d8a97f2337aae50dd8d",
+            "loaded": true
+          },
+          {
+            "method": "long_control_b0",
+            "seed": 2026,
+            "sha256": "764aea4b996652e226340f073428a3392c234cf59dc0c0f49874e213c46eb831",
+            "loaded": true
+          },
+          {
+            "method": "long_fixed_strong",
+            "seed": 42,
+            "sha256": "a8871d9553d45f49cef6b9dc3cab2002a5fccb6c2edacec22970e8d4bb02221b",
+            "loaded": true
+          },
+          {
+            "method": "long_fixed_strong",
+            "seed": 123,
+            "sha256": "f1b4ac4113c2ad39703818155a46d6a8e871bf75b5aa2dc07c6655b50f8dabbc",
+            "loaded": true
+          },
+          {
+            "method": "long_fixed_strong",
+            "seed": 2026,
+            "sha256": "43640f0b5212c69c415d1d4074bb30e2bbc33c19eddd5f222d0a4910137a60cc",
+            "loaded": true
+          },
+          {
+            "method": "long_decay_strong",
+            "seed": 42,
+            "sha256": "e519f2791fedc2c56e7cc2e625685a091db9566f9b34b9d7d7ccd0a307cca2c5",
+            "loaded": true
+          },
+          {
+            "method": "long_decay_strong",
+            "seed": 123,
+            "sha256": "d29c8d330aec4908a44988d1178b9ac571fff1d22fe5d43cce775c96afda74de",
+            "loaded": true
+          },
+          {
+            "method": "long_decay_strong",
+            "seed": 2026,
+            "sha256": "e92a79cee5abb81b3598277178a087ab9e16b6f3c033f12643efb74b05d0657e",
+            "loaded": true
+          },
+          {
+            "method": "long_fixed_medium",
+            "seed": 42,
+            "sha256": "9eadbc547f930ea320c79079ebf9b1606b08afdc077222b20720f1d065ea8b1c",
+            "loaded": true
+          },
+          {
+            "method": "long_fixed_medium",
+            "seed": 123,
+            "sha256": "30085ef8f8bb43398e2c6fe93cf236c9ef13e34a71350ba96dcc312ac4b6928c",
+            "loaded": true
+          },
+          {
+            "method": "long_fixed_medium",
+            "seed": 2026,
+            "sha256": "30c37785f18d29cb19dcb26ba510e82180d0940a6a5f577ba52a6f66ab915fca",
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "complete_runtime_dependencies",
+      "status": "passed",
+      "details": {
+        "offline_installed_dependency_resolution": true,
+        "fresh_clean_install": false,
+        "command_exit_code": 0
+      }
+    },
+    {
+      "name": "public_cli_and_readme_commands",
+      "status": "passed",
+      "details": {
+        "entries": 9,
+        "model_provisioning_command": true,
+        "gui_training_commands": "see separate executed checks"
+      }
+    },
+    {
+      "name": "core_model_loads_and_hashes",
+      "status": "passed",
+      "details": {
+        "verified": 15,
+        "all_frozen_declarations": 46
+      }
+    },
+    {
+      "name": "unified_evaluation_matches_archive",
+      "status": "passed",
+      "details": {
+        "same_100_seed_episode_rows": true,
+        "purpose": "repeat verification, not a new independent final test"
+      }
+    },
+    {
+      "name": "actual_4096_training_updates",
+      "status": "passed",
+      "details": {
+        "passed": true,
+        "source": "Actual Training Rollout",
+        "real_physics_steps": 4096,
+        "csv_rows": 4096,
+        "policy_update_count": 4,
+        "rollout_buffer_checks": [
+          {
+            "rollout_id": 1,
+            "steps": 1024,
+            "raw_actions_exact": true,
+            "observations_exact": true,
+            "action_sha256": "3cfa63ad94629111972fa28c24f3770fb4871c38b8202d035b436c6673d6544c"
+          },
+          {
+            "rollout_id": 2,
+            "steps": 1024,
+            "raw_actions_exact": true,
+            "observations_exact": true,
+            "action_sha256": "9409bf6205826c231a741d611c1d01a3b6e2f4586e15b832de03e5fe78cc1c89"
+          },
+          {
+            "rollout_id": 3,
+            "steps": 1024,
+            "raw_actions_exact": true,
+            "observations_exact": true,
+            "action_sha256": "b42ee695f278012f50d579793d2eccabc02d607386355ce8336d829d1aa14f3e"
+          },
+          {
+            "rollout_id": 4,
+            "steps": 1024,
+            "raw_actions_exact": true,
+            "observations_exact": true,
+            "action_sha256": "e0f7d0730b472bf9b0e83eb76216b21619fe642c41055e2de27bf1630f7bc018"
+          }
+        ],
+        "executed_action_max_error": 0.0,
+        "raw_action_clip_exact": true,
+        "reward_log_max_error": 0.0,
+        "stochastic_action_nonmean_fraction": 1.0,
+        "normalized_noise_mean": [
+          -0.006366042420268059,
+          0.011414356529712677
+        ],
+        "normalized_noise_std": [
+          1.0053291320800781,
+          0.993976354598999
+        ],
+        "no_extra_training_steps": true,
+        "terminal_observations_captured_before_autoreset": true,
+        "raw_rewards_before_time_limit_bootstrap": true,
+        "full_state_dimension": 49,
+        "state_spec": "mjSTATE_INTEGRATION",
+        "replay_uses_captured_rgb_not_reconstructed_or_resampled_actions": true,
+        "complete_episodes": 16,
+        "partial_episodes": 1,
+        "successful_complete_episodes": 11,
+        "failed_complete_episodes": 5,
+        "episodes_crossing_rollout_boundary": [
+          "5",
+          "9",
+          "13"
+        ],
+        "recorded_actual_videos": 4,
+        "all_videos_real_frames": true,
+        "observer_errors": []
+      }
+    },
+    {
+      "name": "portability_sampler_parity",
+      "status": "passed",
+      "details": {
+        "ported_observer_matches_historical_sampler_exactly": true,
+        "fields": [
+          "raw_action",
+          "executed_action",
+          "observation",
+          "reward",
+          "state_before",
+          "state_after"
+        ]
+      }
+    },
+    {
+      "name": "native_mujoco_and_actual_training_window",
+      "status": "passed",
+      "details": {
+        "pretrained_modes": [
+          "bc",
+          "best",
+          "compare including expert/control"
+        ],
+        "actual_training_environment_visible": true,
+        "actual_human_steps": 1024,
+        "updating_phase_window_verified": true,
+        "additional_window_steps": 2048,
+        "render_disabled_after": 1536,
+        "sampling_matches_recorded_prefix_exactly": true
+      }
+    },
+    {
+      "name": "actual_compare_progress_commands",
+      "status": "passed",
+      "details": {
+        "actual_crosses_versions": [
+          0,
+          1
+        ],
+        "actual_predict_calls": false,
+        "actual_env_step_calls": false,
+        "modes": [
+          "actual",
+          "compare",
+          "progress"
+        ]
+      }
+    },
+    {
+      "name": "end_to_end_bc_dagger_ppo",
+      "status": "passed",
+      "details": [
+        {
+          "purpose": "plumbing smoke, not a research result",
+          "profile": "smoke",
+          "ppo_method": "anchor",
+          "ppo_environment_steps": 1024,
+          "expert_train_samples": 500,
+          "expert_validation_samples": 250,
+          "dagger_expert_labels": 250,
+          "dagger_online_steps": 250,
+          "supervised_epochs_per_stage": 2,
+          "ppo_updates": 10,
+          "model_sha256": "abaceaab127e3b55a1f63fbfb813dbd28e0c352a5ec9b31fcd72ca3b199a3b5c",
+          "elapsed_seconds": 3.2371314000338316
+        },
+        {
+          "purpose": "plumbing smoke, not a research result",
+          "profile": "smoke",
+          "ppo_method": "scratch",
+          "ppo_environment_steps": 1024,
+          "expert_train_samples": 500,
+          "expert_validation_samples": 250,
+          "dagger_expert_labels": 250,
+          "dagger_online_steps": 250,
+          "supervised_epochs_per_stage": 2,
+          "ppo_updates": 10,
+          "model_sha256": "7d32b14f9bd578b4a7402d06e72ffd85f72a33aa893f69c316b1ffdfdd6e6f33",
+          "elapsed_seconds": 2.4798717997036874
+        },
+        {
+          "purpose": "plumbing smoke, not a research result",
+          "profile": "smoke",
+          "ppo_method": "init",
+          "ppo_environment_steps": 1024,
+          "expert_train_samples": 500,
+          "expert_validation_samples": 250,
+          "dagger_expert_labels": 250,
+          "dagger_online_steps": 250,
+          "supervised_epochs_per_stage": 2,
+          "ppo_updates": 10,
+          "model_sha256": "8d5ca8d7a0b2b0dd9ae5a00b66417a4d9b099e6579345e41fc9b70aa349cb57d",
+          "elapsed_seconds": 2.4559081001207232
+        },
+        {
+          "purpose": "plumbing smoke, not a research result",
+          "profile": "smoke",
+          "ppo_method": "anchor",
+          "ppo_environment_steps": 1024,
+          "expert_train_samples": 500,
+          "expert_validation_samples": 250,
+          "dagger_expert_labels": 250,
+          "dagger_online_steps": 250,
+          "supervised_epochs_per_stage": 2,
+          "ppo_updates": 10,
+          "model_sha256": "6cc37ad8487c4510af35d59d886ed40a2edbaaf7b22f050d5cfc7010bd726655",
+          "elapsed_seconds": 2.548386299982667
+        }
+      ]
+    },
+    {
+      "name": "anchor_gradients_freezing_schedule",
+      "status": "passed",
+      "details": {
+        "teacher_frozen": true,
+        "teacher_outside_optimizer": true,
+        "actor_gradient_positive": true,
+        "no_direct_std_or_critic_gradient": true,
+        "decay_end_beta": 1000
+      }
+    },
+    {
+      "name": "gif_redecode_validation",
+      "status": "passed",
+      "details": {
+        "decoded_videos": 5,
+        "overview_seconds": 70.0
+      }
+    },
+    {
+      "name": "figure_generation",
+      "status": "passed",
+      "details": {
+        "png_files": 7
+      }
+    },
+    {
+      "name": "frozen_environment_protocol",
+      "status": "passed",
+      "details": {
+        "environment": "Reacher-v5",
+        "episode_steps": 250,
+        "dt": 0.02,
+        "reward_distance_weight": 1,
+        "reward_control_weight": 1,
+        "observation_dim": 10,
+        "action_dim": 2,
+        "action_limits": [
+          -1,
+          1
+        ],
+        "stable_success": "all last 5 XY distances strictly < 0.01 m",
+        "train_seeds": [
+          42,
+          123,
+          2026
+        ],
+        "validation_seeds": [
+          15000,
+          15099
+        ],
+        "final_seeds": [
+          16000,
+          16099
+        ],
+        "short_steps": 20480,
+        "long_steps": 100352,
+        "bc_actor_training_steps": "supervised; not an online PPO budget",
+        "final_statistics": "historical frozen evaluation recomputed; no new independent final set"
+      }
+    },
+    {
+      "name": "historical_files_read_only",
+      "status": "passed",
+      "details": {
+        "unchanged_readable_files": 6159,
+        "changed_files": [],
+        "added_files": [],
+        "unreadable_directory_count": 2,
+        "excluded": [
+          "__pycache__",
+          ".git"
+        ],
+        "limitation": "pre-existing ACL-denied temporary directories could not be inspected"
+      }
+    },
+    {
+      "name": "tensorboard_command",
+      "status": "passed",
+      "details": {
+        "http_status": 200,
+        "temporary_server_stopped": true,
+        "event_files": 1
+      }
+    },
+    {
+      "name": "bilingual_readme_resume_metrics",
+      "status": "passed",
+      "details": {
+        "generated_from_csv": true,
+        "readmes": 2,
+        "resumes": 2
+      }
+    },
+    {
+      "name": "relocated_code_dependencies",
+      "status": "passed",
+      "details": {
+        "isolated_python_flag": true,
+        "no_sibling_history_required": true,
+        "diagnostic_episodes": 2,
+        "purpose": "portability diagnostic, not final results"
+      }
+    },
+    {
+      "name": "fresh_clean_environment_and_cross_platform_install",
+      "status": "skipped",
+      "reason": "No new isolated package download/install or other operating-system execution; installed Windows environment tested with offline dependency resolution."
+    },
+    {
+      "name": "historical_acl_denied_temp_directories",
+      "status": "skipped",
+      "reason": "Two pre-existing historical temporary directories deny read access; no permission changes or deletions attempted. Readable files are hash-verified."
+    },
+    {
+      "name": "new_100k_research_training",
+      "status": "skipped",
+      "reason": "Explicitly prohibited for closeout. Full-budget commands only share exercised smoke branches."
+    },
+    {
+      "name": "local_git_no_private_or_unauthorized_large_assets",
+      "status": "passed",
+      "details": {
+        "staged_files": 260,
+        "largest_bytes": 480211,
+        "binaries_withheld": true,
+        "private_machine_path_matches": 0,
+        "remotes": 0,
+        "public_push": false,
+        "license_grant": "pending_owner_confirmation"
+      }
+    }
+  ],
+  "counts": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 3
+  }
+}

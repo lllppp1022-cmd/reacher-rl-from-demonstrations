@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "candidate_files": 266,
+  "max_file_bytes": 480211,
+  "findings": [],
+  "authorized_pngs": [
+    {
+      "path": "assets/figures/failure_episode13.png",
+      "bytes": 88242,
+      "sha256": "0cdafce1b6cff92e2a6de0dea011d5f48dda7b6eff949f1998e144bb1e5c7ed9",
+      "private_hosting_authorized": true
+    },
+    {
+      "path": "assets/figures/final_comparison.png",
+      "bytes": 63085,
+      "sha256": "7c1dd5ac8d6f6c8d0e66c6f7bc4bb12cbf9fe5680b46a9ad26f21d63d54ad867",
+      "private_hosting_authorized": true
+    },
+    {
+      "path": "assets/figures/pipeline.png",
+      "bytes": 34632,
+      "sha256": "e775808bc961953d7a9589ce2eb2bb37a0d76c0ab04060a6855d9b032ff7ee5a",
+      "private_hosting_authorized": true
+    },
+    {
+      "path": "assets/figures/policy_update_timeline.png",
+      "bytes": 123402,
+      "sha256": "1a0afc1872c2c4d6877a2edca517331f97905ca1447de797303baff37b778b35",
+      "private_hosting_authorized": true
+    },
+    {
+      "path": "assets/figures/robot_control.png",
+      "bytes": 46628,
+      "sha256": "db60f724bd01a50c07ae367ddf013c571d1e6b0491ff21d297201b1e628628f3",
+      "private_hosting_authorized": true
+    },
+    {
+      "path": "assets/figures/training_action_curve.png",
+      "bytes": 480211,
+      "sha256": "9f1562fec12095913514f0d978ac1df993e5e2a63b365df37ed8b6403c99e4ac",
+      "private_hosting_authorized": true
+    },
+    {
+      "path": "assets/figures/training_distance_curve.png",
+      "bytes": 284002,
+      "sha256": "97f263f511483ad59a1b75170e8cf54d6316f98b59e716531ebc8153365f1550",
+      "private_hosting_authorized": true
+    }
+  ],
+  "readme_links": [
+    {
+      "readme": "README.md",
+      "target": "README_CN.md",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/02_实验协议与结果核对.md",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "tests/portfolio_acceptance.json",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/figures/robot_control.png",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/per_seed_results.csv",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/model_manifest.csv",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/figures/pipeline.png",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/figures/final_comparison.png",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/真实PPO试错过程_运行与可视化教程.md",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/README.md",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/video_validation.json",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/03_完整训练复现与工程结构.md",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/source_provenance.csv",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/04_来源与发布许可核对.md",
+      "staged": true
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/dependency_licenses.csv",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "README.md",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "项目收尾完成报告.md",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "docs/真实PPO试错过程_运行与可视化教程.md",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/figures/robot_control.png",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/figures/pipeline.png",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/figures/final_comparison.png",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/README.md",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/video_validation.json",
+      "staged": true
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "docs/04_来源与发布许可核对.md",
+      "staged": true
+    }
+  ],
+  "secret_scan": "heuristic pattern and staged-file audit; not a guarantee against every credential format",
+  "source_hosting_authorization": "User explicitly authorized source incl19 src/verified files, docs, anonymized metrics and7 PNGs in own Private GitHub; not Public",
+  "excluded": [
+    "all model ZIP/PT",
+    "expert and diagnostic NPZ",
+    "results and raw trajectories/RGB",
+    "five GIFs and all videos",
+    "local environments/caches",
+    "local upload receipt"
+  ],
+  "third_party_notices_preserved": true
+}

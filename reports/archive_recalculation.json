@@ -1,0 +1,92 @@
+[
+  {
+    "job": "BC-DAgger_seed42",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "BC-DAgger_seed123",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "BC-DAgger_seed2026",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_control_b0_seed42",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_control_b0_seed123",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_control_b0_seed2026",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_fixed_strong_seed42",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_fixed_strong_seed123",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_fixed_strong_seed2026",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_decay_strong_seed42",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_decay_strong_seed123",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_decay_strong_seed2026",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_fixed_medium_seed42",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_fixed_medium_seed123",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  },
+  {
+    "job": "long_fixed_medium_seed2026",
+    "csv_npz_match": true,
+    "archive_summary_match": true,
+    "model_hash_match": true
+  }
+]

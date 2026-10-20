@@ -1,0 +1,16 @@
+{
+  "scope": "GitHub private packaging; no algorithm or frozen-result changes",
+  "private_hosting_authorized_by_user": true,
+  "public_hosting_authorized": false,
+  "source_verified_files_unchanged": 19,
+  "core_models_hash_verified": 15,
+  "all_frozen_declarations_hash_verified": 46,
+  "io_fixes": [
+    "From-scratch anchoring uses template config and newly trained teacher/data, without historical model initialization",
+    "Missing-model initialization error identifies required relative path and SHA",
+    "Expert-only diagnostic evaluation/recording does not require learned models",
+    "README points only to staged resources; unavailable GIF/model links are plain local filenames"
+  ],
+  "original_training_loss_and_optimizer_unchanged": true,
+  "git_authentication": "Git Credential Manager; no token persisted by project scripts"
+}

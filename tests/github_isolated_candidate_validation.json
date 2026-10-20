@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "exact_staged_files": 264,
+  "no_historical_siblings_or_pretrained_assets": true,
+  "isolated_flag": "python -I",
+  "tests": [
+    {
+      "arguments": [
+        "scripts/portfolio.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "elapsed_seconds": 2.821957199834287,
+      "expected_text": null
+    },
+    {
+      "arguments": [
+        "scripts/portfolio.py",
+        "results"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "elapsed_seconds": 2.637532699853182,
+      "expected_text": "64.66666666666667"
+    },
+    {
+      "arguments": [
+        "scripts/portfolio.py",
+        "init"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "elapsed_seconds": 2.387554199900478,
+      "expected_text": "Provision authorized weights first: models/BC-DAgger/seed42/bc_best.zip; expected SHA256="
+    },
+    {
+      "arguments": [
+        "-c",
+        "import sys;sys.path.insert(0,'.');import src.envs,src.expert,src.imitation,src.rl,src.evaluation,src.visualization;from src.runtime import registry;assert len(registry())==15;print('IMPORTS AND MODEL REGISTRY OK')"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "elapsed_seconds": 2.718680199701339,
+      "expected_text": "IMPORTS AND MODEL REGISTRY OK"
+    },
+    {
+      "arguments": [
+        "scripts/portfolio.py",
+        "evaluate",
+        "--method",
+        "ikpd",
+        "--first-seed",
+        "17080",
+        "--episodes",
+        "2",
+        "--output",
+        "results/expert_diagnostic"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "elapsed_seconds": 2.687363499775529,
+      "expected_text": "EVALUATED repeat_verification"
+    },
+    {
+      "arguments": [
+        "scripts/portfolio.py",
+        "pipeline",
+        "--profile",
+        "smoke",
+        "--output",
+        "results/from_scratch_smoke",
+        "--ppo-method",
+        "anchor"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "elapsed_seconds": 5.770658100023866,
+      "expected_text": "PIPELINE COMPLETE"
+    }
+  ],
+  "smoke_ppo_steps": 1024,
+  "smoke_expert_training_samples": 500,
+  "smoke_expert_validation_samples": 250,
+  "smoke_dagger_labels": 250,
+  "not_new_research": true,
+  "installed_python": "3.11.17",
+  "fresh_machine_install_tested": false
+}

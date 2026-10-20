@@ -1,0 +1,12 @@
+[
+  {
+    "file": "reacher_bc_ppo/configs/experiment.json",
+    "sha256": "ca7c2e953b9c6ff87eb7e52f82cadfbd9bc167164903f0815da366d8e31ed2e9",
+    "bytes": 1307
+  },
+  {
+    "file": "reacher_bc_ppo/tests/acceptance.json",
+    "sha256": "0c37af46576887b6be7a25be659ab320d0088b1d1609b882004764069cc6bd96",
+    "bytes": 445
+  }
+]

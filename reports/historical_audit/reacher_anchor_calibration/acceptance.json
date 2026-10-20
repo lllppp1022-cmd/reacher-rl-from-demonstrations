@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "new_project": "reacher_anchor_calibration",
+  "short_runs": 12,
+  "long_runs": 15,
+  "formal_online_steps": 1751040,
+  "calibration_betas": {
+    "weak": 200.0,
+    "medium": 2000.0,
+    "strong": 10000.0
+  },
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "beta0_old_anchor_max_parameter_difference": 0.0,
+  "gradient_path_and_freezing": true,
+  "adam_roundtrip_exact": true,
+  "nan_guard_verified": true,
+  "source_models_and_old_files_unchanged": true,
+  "snapshots_verified": 207,
+  "final_declared_models": 46,
+  "unique_final_models": 37,
+  "final_episodes": 3700,
+  "final_once_per_unique_sha": true,
+  "identical_evaluation_initial_states": true,
+  "videos_verified": 35,
+  "png_verified": 20,
+  "native_viewer_and_automatic_switching": true,
+  "unexecuted_potential_long_runs": 6,
+  "additional_audit_and_failed_diagnostic_environment_steps": 43792,
+  "parity_steps": 1024,
+  "smoke_steps": 8192,
+  "gif_supported": true,
+  "mp4_executed": false,
+  "acceptance_items": {
+    "1": {
+      "status": "passed",
+      "item": "独立新项目",
+      "evidence": "output_root and historical SHA checks"
+    },
+    "2": {
+      "status": "passed",
+      "item": "实际实验数量",
+      "evidence": "complete.json + experiment_manifest.csv"
+    },
+    "3": {
+      "status": "passed",
+      "item": "梯度强度标定",
+      "evidence": "55 matched-batch CSV rows + archived inputs"
+    },
+    "4": {
+      "status": "passed",
+      "item": "β选择与规则",
+      "evidence": "beta_calibration.json + derived_candidates_frozen.json"
+    },
+    "5": {
+      "status": "passed",
+      "item": "三个seed模型路径",
+      "evidence": "all ZIP hashes and source hashes verified"
+    },
+    "6": {
+      "status": "passed",
+      "item": "真实训练预算",
+      "evidence": "num_timesteps and complete rollout sequences"
+    },
+    "7": {
+      "status": "passed",
+      "item": "稳定成功率",
+      "evidence": "recomputed LAST5 from trajectory NPZ"
+    },
+    "8": {
+      "status": "passed",
+      "item": "最终定位误差",
+      "evidence": "recomputed from episode CSV"
+    },
+    "9": {
+      "status": "passed",
+      "item": "动作代价",
+      "evidence": "recomputed summary; action clipping verified"
+    },
+    "10": {
+      "status": "passed",
+      "item": "更新KL",
+      "evidence": "finite per-update JSONL diagnostics"
+    },
+    "11": {
+      "status": "passed",
+      "item": "Actor相对BC动作偏差",
+      "evidence": "checkpoint actor hash and finite BC MSE"
+    },
+    "12": {
+      "status": "passed",
+      "item": "锚定梯度比",
+      "evidence": "mean Actor only; zero/perturbed/three trained states"
+    },
+    "13": {
+      "status": "passed",
+      "item": "长期退化完整披露",
+      "evidence": "final AND validation-best frozen model jobs"
+    },
+    "14": {
+      "status": "passed",
+      "item": "无锚定对照",
+      "evidence": "fresh b0 three seeds matched budgets"
+    },
+    "15": {
+      "status": "passed",
+      "item": "BC能力保持比较",
+      "evidence": "same evaluation initial states and paired seed baselines"
+    },
+    "16": {
+      "status": "passed",
+      "item": "超越BC结论",
+      "evidence": "observed success AND error criteria explicitly reported"
+    },
+    "17": {
+      "status": "passed",
+      "item": "MuJoCo启动命令",
+      "evidence": "native visible250-frame runs and automatic snapshot switches"
+    },
+    "18": {
+      "status": "passed",
+      "item": "GIF与可选MP4",
+      "evidence": "decoded frames, duration, movement, pixel differences and SHA"
+    },
+    "19": {
+      "status": "passed",
+      "item": "中文研究报告",
+      "evidence": "actual metrics tables and code/config hashes"
+    },
+    "20": {
+      "status": "passed",
+      "item": "初学者中文教程",
+      "evidence": "file exists; actual public commands and TensorBoard HTTP verified"
+    },
+    "21": {
+      "status": "passed",
+      "item": "未执行与未完成事项",
+      "evidence": "blank performance/steps for unexecuted jobs; explicit GIF fallback"
+    }
+  },
+  "checked_unix": 1792394664.490258
+}

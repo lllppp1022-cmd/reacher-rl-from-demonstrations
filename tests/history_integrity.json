@@ -1,0 +1,11 @@
+{
+  "unchanged_readable_files": 6159,
+  "changed_files": [],
+  "added_files": [],
+  "unreadable_directory_count": 2,
+  "excluded": [
+    "__pycache__",
+    ".git"
+  ],
+  "limitation": "pre-existing ACL-denied temporary directories could not be inspected"
+}

@@ -1,0 +1,1 @@
+快速开始命令均经功能验证：模型初始化、BC/best/compare原生窗口、100回合重复评价、4096实际录制、1024原生训练窗口、actual/compare/progress播放器、GIF录制、结果显示、三种1024步端到端流程及TensorBoard服务。测试用max-steps/max-frames自动关窗，新输出目录名可不同。完整100k命令仅验证help和对应smoke分支，未执行。联网依赖下载与跨平台干净安装未执行；现有环境进行了离线pip解析，不把其声称为全新隔离环境安装。具体命令、退出码、输出日志和耗时见tests/command_validation.json及本地command_logs。

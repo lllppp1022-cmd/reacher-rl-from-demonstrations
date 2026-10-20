@@ -1,0 +1,27 @@
+[
+  {
+    "file": "reacher_anchor_calibration/configs/experiment.json",
+    "sha256": "c65d2df7ae7cc373b13a19a69e4afcb6f1b1a0549ae47f089a5050fd3dc22fe6",
+    "bytes": 4128
+  },
+  {
+    "file": "reacher_anchor_calibration/tests/acceptance.json",
+    "sha256": "459cf36684cc5d0f78b316e08e9069ee2ccd7e764fc2444d4c1cba45cee1a889",
+    "bytes": 4326
+  },
+  {
+    "file": "reacher_anchor_calibration/reports/BC_Anchoring约束强度标定与长期稳定性实验报告.md",
+    "sha256": "e7a52e583847d0b8cd4ad97756759e57a29697e18c7460faee615fba8972cfea",
+    "bytes": 19417
+  },
+  {
+    "file": "reacher_anchor_calibration/reports/实际训练清单与模型哈希.md",
+    "sha256": "6733ae6775f3df5b33f8cb1ec3275778bb24cfeb9c447479da60f8e71b7330c2",
+    "bytes": 6988
+  },
+  {
+    "file": "reacher_anchor_calibration/reports/梯度尺度与约束有效性审计报告.md",
+    "sha256": "bf29adbb22952c1373f62a1bdb41e937b306dfcbe1daf7eb674835724ef27843",
+    "bytes": 5123
+  }
+]
