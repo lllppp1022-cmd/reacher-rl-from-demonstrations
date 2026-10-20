@@ -1,0 +1,192 @@
+{
+  "passed": true,
+  "commits_audited": [
+    "56da5e18f2656057d1a4faf7fa403ef2039f94ff"
+  ],
+  "unique_history_blobs": 215,
+  "current_files": 276,
+  "findings": [],
+  "verified_source_files_unchanged": 19,
+  "third_party_notice_files_preserved": 164,
+  "readme_links": [
+    {
+      "readme": "README.md",
+      "target": "README_CN.md"
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/02_实验协议与结果核对.md"
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/source_provenance.csv"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/01_same_start_comparison_preview.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/01_same_start_comparison.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/00_project_overview.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/figures/pipeline.png"
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/final_results.csv"
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/per_seed_results.csv"
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/model_manifest.csv"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/figures/final_comparison.png"
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/03_完整训练复现与工程结构.md"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/02_actual_online_learning_preview.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/02_actual_online_learning.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/03_bc_vs_final_policy.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "assets/videos/04_failure_cases.gif"
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/public_media_validation.json"
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/真实PPO试错过程_运行与可视化教程.md"
+    },
+    {
+      "readme": "README.md",
+      "target": "reports/dependency_licenses.csv"
+    },
+    {
+      "readme": "README.md",
+      "target": "docs/04_来源与发布许可核对.md"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "README.md"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "docs/02_实验协议与结果核对.md"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/source_provenance.csv"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/01_same_start_comparison_preview.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/01_same_start_comparison.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/00_project_overview.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/figures/pipeline.png"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/final_results.csv"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/per_seed_results.csv"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/model_manifest.csv"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/figures/final_comparison.png"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "docs/03_完整训练复现与工程结构.md"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/02_actual_online_learning_preview.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/02_actual_online_learning.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/03_bc_vs_final_policy.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "assets/videos/04_failure_cases.gif"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/public_media_validation.json"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "docs/真实PPO试错过程_运行与可视化教程.md"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "reports/dependency_licenses.csv"
+    },
+    {
+      "readme": "README_CN.md",
+      "target": "docs/04_来源与发布许可核对.md"
+    }
+  ],
+  "reviewed_public_gifs": [
+    "assets/videos/00_project_overview.gif",
+    "assets/videos/01_same_start_comparison.gif",
+    "assets/videos/01_same_start_comparison_preview.gif",
+    "assets/videos/02_actual_online_learning.gif",
+    "assets/videos/02_actual_online_learning_preview.gif",
+    "assets/videos/03_bc_vs_final_policy.gif",
+    "assets/videos/04_failure_cases.gif"
+  ],
+  "user_public_authorization": true,
+  "project_license": "not independently selected",
+  "history_author_email": "GitHub noreply only",
+  "sensitive_content_review": "heuristic history/content scanning plus visual GIF contact-sheet review; not a universal credential-detection guarantee",
+  "excluded": [
+    "weights",
+    "expert/diagnostic datasets",
+    "raw rollout/RGB archives",
+    "video ZIP"
+  ]
+}

@@ -30,3 +30,13 @@ reports/*local*.json
 /docs/GitHub上传与发布检查报告.md
 
 /reports/github_upload_runtime.json
+
+!assets/videos/00_project_overview.gif
+!assets/videos/01_same_start_comparison.gif
+!assets/videos/02_actual_online_learning.gif
+!assets/videos/03_bc_vs_final_policy.gif
+!assets/videos/04_failure_cases.gif
+!assets/videos/01_same_start_comparison_preview.gif
+!assets/videos/02_actual_online_learning_preview.gif
+/docs/GitHub公开发布完成报告.md
+/reports/public_release_runtime.json
